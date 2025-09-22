@@ -10,7 +10,6 @@ public class Main
         System.out.println("|Note! do not use any symbols when inputting data! (no $ or %)");
         System.out.println("---------------------------------------------------------------");
 
-        System.out.println("Welcome!");
         System.out.print("Enter your Bill($): ");
         double billPT = scan.nextDouble();
         scan.nextLine();
@@ -28,7 +27,15 @@ public class Main
         double totalPP100 = Math.round(billTotal*100/numP);
         double totalPP = totalPP100/100;
 
-
+        System.out.println("-----------------------------");
+        System.out.println("|Total Tip Amount: $");
+        System.out.println("-----------------------------");
+        System.out.println("|Total Bill Cost: $");
+        System.out.println("-----------------------------");
+        System.out.println("|Tip Per Person: $");
+        System.out.println("-----------------------------");
+        System.out.println("|Total Bill Per Person: $");
+        System.out.println("-----------------------------");
 
 
         scan.close();

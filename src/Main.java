@@ -10,6 +10,7 @@ public class Main
         System.out.println("|Note! do not use any symbols when inputting data! (no $ or %)");
         System.out.println("---------------------------------------------------------------");
 
+        System.out.println("Welcome!");
         System.out.print("Enter your Bill($): ");
         double billPT = scan.nextDouble();
         scan.nextLine();

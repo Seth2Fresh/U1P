@@ -42,7 +42,7 @@ public class Main
         System.out.println("-----------------------------");
         System.out.println("|Tip Per Person: $"+ df.format(tipPP));
         System.out.println("-----------------------------");
-        System.out.println("|Total Bill Per Person: $" + df.format(billTotal/numP));
+        System.out.println("|Total Bill Per Person: $" + df.format(totalPP));
         System.out.println("-----------------------------");
 // prints everything out
 

@@ -23,18 +23,14 @@ public class Main
         double numP = scan.nextDouble();
         scan.nextLine();
         // user inputted number of people
-        double tipTotal100 = (Math.round(billPT*(tipP)));
-        //multiples the inputted bill and the tip percent and rounds to get 100x the tip as an int
-        double tipTotal = tipTotal100/100;
-        //divides by 100 to get a double with 2 decimal places
+        double tipTotal = billPT*(tipP)/100;
+        //multiples the inputted bill and the tip percent divided by 100 and rounds to get the tip as a double with 2 decimal places
         double billTotal = tipTotal+billPT;
         // adds the tip and the inputted bill amount
-        double tipPP100 = Math.round(tipTotal100/numP);
-        double tipPP = tipPP100/100;
-        // takes the 100x tip, divides by the number of people, then divides by 100 to get a tip per person rounded to the nearest hundredth
-        double totalPP100 = Math.round(billTotal*100/numP);
-        double totalPP = totalPP100/100;
-        // takes the 100x total bill, divides by the number of people, then divides by 100 to get a total per person rounded to the nearest hundredth
+        double tipPP = tipTotal/numP;
+        // takes the tip, divides by the number of people to get a tip per person rounded to the nearest hundredth
+        double totalPP = billTotal/numP;
+        // takes the total bill, divides by the number of people to get a total per person rounded to the nearest hundredth
         System.out.println("-----------------------------");
         System.out.println("|Total Tip Amount: $" +df.format(tipTotal));
         System.out.println("-----------------------------");
@@ -45,7 +41,6 @@ public class Main
         System.out.println("|Total Bill Per Person: $" + df.format(totalPP));
         System.out.println("-----------------------------");
 // prints everything out
-
         scan.close();
     }
 }
